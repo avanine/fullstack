@@ -58,7 +58,7 @@ function OneCountry(props) {
       <ul>
         {languages.map(language => <li key={language.iso639_1}>{language.name}</li>)}
       </ul>
-      <img src={country.flags[0]} height="70" border="1" alt="flag" />
+      <img src={country.flags.png} height="70" border="1" alt="flag" />
       <h2>Weather in {country.capital}</h2>
       {weather.current ? (
         <div>
